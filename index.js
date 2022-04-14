@@ -17,8 +17,8 @@ const app = express()
 // #############################################################################
 // Catch all handler for all other request.
 app.use('*', (req,res) => {
-  res.writeHead('302','Redirect Temporary', {
-    'Location': 'https://discord.gg/huhcqxXCbE'
+  res.writeHead('307','Redirect Temporary', {
+    'Location': `mailto:kam.lasater@cyclic.sh?&subject=Hello Kam&body=I'm interested in Cyclic.`
   }).end()
 })
 
